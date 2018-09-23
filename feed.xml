@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storybooks Zambia</title>
+    <description>Storybooks Zambia is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in English and Bemba, as well as the most widely spoken languages of Zambia.
+</description>
+    <link>https://global-asp.github.io//storybooks-zambia/</link>
+    <atom:link href="https://global-asp.github.io//storybooks-zambia/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 23 Sep 2018 05:43:11 -0700</pubDate>
+    <lastBuildDate>Sun, 23 Sep 2018 05:43:11 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
