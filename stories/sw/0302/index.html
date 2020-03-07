@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Download Options</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -93,6 +93,47 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-zambia/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-zambia/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Close" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Close" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Download Options</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Regular PDFs (full-page)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/media/sbzm/pdf/sw/sw-0302_fire.pdf" target="_blank">Regular PDF (monolingual)<br><center><img src="/storybooks-zambia/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/wordless/0302_fire-wordless.pdf" target="_blank">Wordless PDF (landscape)<br><center><img src="/storybooks-zambia/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless/sw/sw-0302_fire-imageless.pdf" target="_blank">Imageless PDF (monolingual)<br><center><img src="/storybooks-zambia/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Bilingual PDFs</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/bilingual/sw-en/0302_fire-bilingual_sw-en.pdf" target="_blank">Bilingual PDF (Kiswahili-English, landscape)<br><center><img src="/storybooks-zambia/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/bilingual/sw-bem/0302_fire-bilingual_sw-bem.pdf" target="_blank">Bilingual PDF (Kiswahili-Bemba, landscape)<br><center><img src="/storybooks-zambia/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless-bilingual/sw-en/0302_fire-imageless-bilingual_sw-en.pdf" target="_blank">Bilingual imageless PDF (Kiswahili-English, landscape)<br><center><img src="/storybooks-zambia/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless-bilingual/sw-bem/0302_fire-imageless-bilingual_sw-bem.pdf" target="_blank">Bilingual imageless PDF (Kiswahili-Bemba, landscape)<br><center><img src="/storybooks-zambia/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Booklet PDFs (for printing)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/booklet/sw/sw-0302_fire-booklet.pdf" target="_blank">Booklet PDF (monolingual)<br><center><img src="/storybooks-zambia/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/bilingual-booklet/sw-en/0302_fire-bilingual_sw-en-booklet.pdf" target="_blank">Bilingual booklet PDF (Kiswahili-English)<br><center><img src="/storybooks-zambia/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/bilingual-booklet/sw-bem/0302_fire-bilingual_sw-bem-booklet.pdf" target="_blank">Bilingual booklet PDF (Kiswahili-Bemba)<br><center><img src="/storybooks-zambia/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/wordless-booklet/0302_fire-wordless-booklet.pdf" target="_blank">Wordless booklet<br><center><img src="/storybooks-zambia/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless-booklet/sw/sw-0302_fire-imageless-booklet.pdf" target="_blank">Imageless booklet (monolingual)<br><center><img src="/storybooks-zambia/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless-bilingual-booklet/sw-en/0302_fire-imageless-bilingual_sw-en-booklet.pdf" target="_blank">Bilingual imageless booklet (Kiswahili-English)<br><center><img src="/storybooks-zambia/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbzm-pdf/raw/master/imageless-bilingual-booklet/sw-bem/0302_fire-imageless-bilingual_sw-bem-booklet.pdf" target="_blank">Bilingual imageless booklet (Kiswahili-Bemba)<br><center><img src="/storybooks-zambia/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Close</a>
+    </div>
+  </div>
 </div>
 
 <hr>
@@ -354,7 +395,7 @@
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-zambia/stories/sw" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
+	<a class="btn btn-lg" href="/storybooks-zambia/stories/sw" class="button">Back to stories list</a> <a class="btn btn-lg" href="https://globalstorybooks.net/media/sbzm/pdf/sw/sw-0302_fire.pdf" target="_blank">Download PDF</a>
 <br><br>
 </div>
 
