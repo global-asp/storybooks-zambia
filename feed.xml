@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storybooks Zambia</title>
-    <description>Storybooks Zambia is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in English and Bemba, as well as the most widely spoken languages of Zambia.
+    <description>Storybooks Zambia is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in English and ChiBemba, as well as the most widely spoken languages of Zambia.
 </description>
     <link>https://storybookszambia.net//</link>
     <atom:link href="https://storybookszambia.net//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Dec 2022 09:07:01 -0800</pubDate>
-    <lastBuildDate>Fri, 02 Dec 2022 09:07:01 -0800</lastBuildDate>
+    <pubDate>Sat, 03 Dec 2022 11:52:46 -0800</pubDate>
+    <lastBuildDate>Sat, 03 Dec 2022 11:52:46 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
   </channel>
